@@ -9,7 +9,7 @@ def edit_cat_food(save_stats: dict[str, Any]) -> dict[str, Any]:
     cat_food = item.IntItem(
         name="Cat Food",
         value=item.Int(save_stats["cat_food"]["Value"]),
-        max_value=45000,
+        max_value=200000,
         bannable=item.Bannable(
             managed_item.ManagedItemType.CATFOOD, save_stats["inquiry_code"]
         ),
